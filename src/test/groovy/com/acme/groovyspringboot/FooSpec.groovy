@@ -1,23 +1,24 @@
 package com.acme.groovyspringboot
 
+import org.spockframework.spring.StubBeans
+import spock.lang.Specification
+
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 import org.springframework.test.web.servlet.MockMvc
-import org.springframework.web.context.WebApplicationContext
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
-class FooSpec extends ContractBaseSpec {
-
-	@Autowired
-	private WebApplicationContext context
+@WebMvcTest(FooController)
+@StubBeans(BarService)
+class FooSpec extends Specification {
 
 	@Autowired
 	private MockMvc mvc
 
 	def "should access foo"() {
 		expect:
-			context
 			this.mvc.perform(get("/foo"))
 					.andExpect(status().isOk());
 	}
