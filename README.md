@@ -5,5 +5,6 @@ Spring Boot App in Groovy
 Features
 ---
 * Java 11
-* Spock Tests
+* Spring Boot 2
+* Spock
 * Groovy 2.5
