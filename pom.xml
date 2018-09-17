@@ -34,6 +34,12 @@
             <artifactId>groovy</artifactId>
             <version>2.5.3-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.spockframework</groupId>
+            <artifactId>spock-core</artifactId>
+            <version>1.2-RC2-groovy-2.4</version>
+            <scope>test</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
