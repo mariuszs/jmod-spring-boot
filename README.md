@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mariuszs/groovy-spring-boot.svg?branch=master)](https://travis-ci.org/mariuszs/groovy-spring-boot)
+
 Spring Boot App with Java 11
 ===
 
