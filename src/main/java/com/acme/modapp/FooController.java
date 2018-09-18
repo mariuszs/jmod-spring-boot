@@ -1,4 +1,4 @@
-package com.acme.groovyspringboot;
+package com.acme.modapp;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +12,7 @@ public class FooController {
 		this.barService = barService;
 	}
 
-	@GetMapping("/foo")
+	@GetMapping("/")
 	public void foo() {
 		barService.bar();
 	}

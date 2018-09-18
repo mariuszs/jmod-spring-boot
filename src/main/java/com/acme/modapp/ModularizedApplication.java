@@ -1,13 +1,13 @@
-package com.acme.groovyspringboot;
+package com.acme.modapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GroovySpringBootApplication {
+public class ModularizedApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GroovySpringBootApplication.class, args);
+		SpringApplication.run(ModularizedApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.acme.groovyspringboot
+package com.acme.modapp
 
 import org.spockframework.spring.StubBeans
 import spock.lang.Specification
@@ -19,7 +19,7 @@ class FooSpec extends Specification {
 
 	def "should access foo"() {
 		expect:
-			this.mvc.perform(get("/foo"))
+			this.mvc.perform(get("/"))
 					.andExpect(status().isOk());
 	}
 
